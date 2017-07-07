@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\CameraRotator.cs" />
      <Compile Include="Assets\FrogMovement.cs" />
+     <Compile Include="Assets\LaneSpawner.cs" />
      <Compile Include="Assets\LevelManager.cs" />
+     <Compile Include="Assets\TreeSpawner.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
