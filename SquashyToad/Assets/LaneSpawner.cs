@@ -1,20 +1,22 @@
 ﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LaneSpawner : MonoBehaviour {
 
 	public GameObject[] lanePrefabs;
-
+	public int maxLanes = 50;
+	private float laneWidth = 10;
 
 	// Use this for initialization
 	void Start () {
-		CreateRandomLane (0);
-		CreateRandomLane (10);
-		CreateRandomLane (20);
-		CreateRandomLane (30);
-		CreateRandomLane (40);
-		
+		int lanesCreated = 0;
+		while (lanesCreated < maxLanes) {
+			float offset = lanesCreated * laneWidth;
+			CreateRandomLane (offset);
+			lanesCreated++;
+		}			
 	}
 
 	void CreateRandomLane(float offset){
@@ -23,9 +25,9 @@ public class LaneSpawner : MonoBehaviour {
 		lane.transform.parent = transform;
 		lane.transform.Translate (0, 0, offset);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 }
