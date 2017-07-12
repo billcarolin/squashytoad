@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraRotator.cs" />
+     <Compile Include="Assets\Death.cs" />
      <Compile Include="Assets\FrogMovement.cs" />
      <Compile Include="Assets\HUDRotation.cs" />
      <Compile Include="Assets\LaneSpawner.cs" />
+     <Compile Include="Assets\Lethal.cs" />
      <Compile Include="Assets\LevelManager.cs" />
      <Compile Include="Assets\TreeSpawner.cs" />
      <Compile Include="Assets\VehicleMovement.cs" />

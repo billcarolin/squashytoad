@@ -10,6 +10,12 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene (currentIndex + 1);
 	}
 
+	public void ReloadScene()
+	{
+		int currentIndex = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(currentIndex);
+	}
+
 	public void Quit(){
 		Debug.Log ("Application will Quit");
 		Application.Quit ();
