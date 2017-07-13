@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+	public void Start()
+	{
+		//used to hide the cursor in the Game View window.
+//		Cursor.lockState = CursorLockMode.Locked;
+//		Cursor.visible = false;
+	}
+
 	public void LoadNextScene(){
 		int currentIndex = SceneManager.GetActiveScene ().buildIndex;
 		SceneManager.LoadScene (currentIndex + 1);

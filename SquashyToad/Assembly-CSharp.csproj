@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\CameraRotator.cs" />
      <Compile Include="Assets\Death.cs" />
+     <Compile Include="Assets\Destructor.cs" />
      <Compile Include="Assets\FrogMovement.cs" />
      <Compile Include="Assets\HUDRotation.cs" />
      <Compile Include="Assets\LaneSpawner.cs" />

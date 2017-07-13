@@ -9,5 +9,6 @@ public class Death : MonoBehaviour {
 	public void OnDeath()
 	{
 		UICanvas.SetActive(true);
+		GetComponent<Rigidbody> ().isKinematic = true;
 	}
 }
